@@ -7,6 +7,9 @@ install.packages(setdiff("pacman", rownames(installed.packages())))
 ## PACKAGE PACMAN LOADS AND CHECKS IF EACH PACKAGE NEEDS INSTALLED
 pacman::p_load(dplyr,tidyr, tidyverse, zoo, scales, ggpubr, xlsx)
 
+## SET WORKING DIRECTORY WHERE THE .XLSX LINE LIST IS LOCATED
+setwd(choose.dir())
+
 ## LOAD DATA
 #df2 <- read_excel("Data entry from sites_Ft. Dix.xlsx")
 #df2 <- read_excel("Data entry from sites_Ft. Bliss.xlsx")
